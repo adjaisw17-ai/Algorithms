@@ -3,6 +3,9 @@
 using namespace std;
 
 // This is a divide and conquer method - remember this method... it is used in many cp questions
+// Best Case: (Ω(n log n))
+// Average Case (θ(n log n))
+// Worst Case: (O(n²)), Occurs when the smallest or largest element is always chosen as the pivot (e.g., sorted arrays).
 
 int partition(vector<int>& arr, int low, int high) {
   
