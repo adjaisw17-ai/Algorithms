@@ -28,12 +28,12 @@ string LCS(){
             i--;j--;    
         }
         else{
-            s=Y[j-1]+s;
-            s=X[i-1]+s;
             if(t[i-1][j]>t[i][j-1]){
+                s=X[i-1]+s;
                 i--;
             }
             else{
+                s=Y[j-1]+s;
                 j--;
             }
             
